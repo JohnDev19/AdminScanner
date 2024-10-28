@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1rem;
+}
+
+.terminal-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  color: #00ff00;
+  font-size: 0.7rem;
+}
+
+.terminal-input {
+  display: flex;
+  padding: 10px;
+  background-color: #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.help-command {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.command-list {
+    margin-left: 20px;
+}
+
+.command-item {
+    margin-bottom: 5px;
+}
+
+.command {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.prompt {
+  color: #00ff00;
+  margin-right: 10px;
+}
+
+#command-input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.ascii-art {
+    color: #0f0;
+    font-family: monospace;
+    white-space: pre;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.intro-text {
+    color: #0f0;
+    font-family: monospace;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #0f0;
+    height: 20px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.success-message {
+    color: #0f0;
+}
+
+.error-message {
+    color: #f00;
+}
+
+.warning-message {
+    color: #ff0;
+}
+
+@media (max-width: 600px) {
+  .terminal {
+      max-width: none;
+      max-height: none;
+      border-radius: 0;
+  }
+
+  .terminal-header {
+      border-radius: 0;
+  }
+
+  .terminal-body {
+      font-size: 0.8rem;
+  }
+
+  #command-input {
+      font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .terminal {
+      max-width: 1000px;
+      max-height: 800px;
+  }
+
+  .terminal-body {
+      font-size: 1rem;
+  }
+
+  #command-input {
+      font-size: 1rem;
+  }
