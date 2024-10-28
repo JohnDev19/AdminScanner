@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminScanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            AdminScanner
+        </div>
+        <div class="terminal-body" id="output">
+            <div class="welcome-message">
+                Welcome to AdminScanner v2.0.0
+            </div>
+        </div>
+        <div class="terminal-input">
+            <span class="prompt">$</span>
+            <input type="text" id="command-input" autocomplete="off">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/terminal.js') }}"></script>
+</body>
+</html>
