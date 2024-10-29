@@ -2,8 +2,8 @@
 
 AdminScanner is a web-based administrative panel finder tool designed for security researchers and penetration testers. This interactive terminal-based tool enables real-time scanning for admin panels on web applications, helping users locate and assess vulnerabilities in administrative interfaces.
 
-![Demo]()
-![Demo]()
+![Demo](terminalas.jpg)
+![Demo](terminalas2.jpg)
 
 ## Features
 
