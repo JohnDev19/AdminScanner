@@ -4,6 +4,7 @@ AdminScanner is a web-based administrative panel finder tool designed for securi
 
 ![Demo](terminalas.jpg)
 ![Demo](terminalas2.jpg)
+![Demo](terminalas3.jpg)
 
 ## Features
 
